@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -23,17 +23,22 @@
             </nav>
         </div>
     </div>
+
+    <section class="header">
+        <div class="container flex">
+            <h1 class="lg">Welcome to my Blog! I love sharing information about the beautiful country of Colombia</h1>
+        </div>
+    </section>
+
     <section class="content">
         <div class="container grid">
             <div class="content-text">
-                <h1>Welcome to my Blog!</h1>
-                <h2>
-                    I like to share information about the beautiful country of Colombia
-                </h2>
                 <div class="my-2">
                     <h3 class="md">Park Guatape, Colombia</h3>
                     <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/8e/0a/63/colombia-and-experience.jpg?w=600&h=400&s=1"
                         alt="Park Guatape, Colombia" />
+                    <img src="https://i0.wp.com/unusualplaces.org/wp-content/uploads/2014/05/RockofGuatap%C3%A93.jpg?w=1024&ssl=1"
+                        alt="Piedra del penol" </div>
                 </div>
             </div>
             <div class="content-post">
@@ -51,7 +56,7 @@
                             thermal floor (between 1,000 and 2,000 meters above sea level
                             and 17 to 24°C).
                         </p>
-                        <div>
+                        <div class="Py-3">
                             <a href="blog.html" class="btn btn-outline">Read More</a>
                         </div>
                     </div>
@@ -60,10 +65,10 @@
         </div>
     </section>
 
-    <section class="registration my-2">
-        <div class="container grid grid-1">
+    <section class="registration">
+        <div class="container flex">
             <div class="reg-form form card">
-                <h3 class="form-hd">Subscribe to the Newsletter</h3>
+                <h3 class="form-hd">Subscribe to my Newsletter</h3>
                 <form name="registration" method="POST" netlify-honeypot="bot-field" data-netlify="true"
                     data-netlify="true">
                     <input type="hidden" name="form-name" value="registration">
@@ -81,20 +86,18 @@
                     <input type="submit" value="Subscribe" class="btn" />
                 </form>
             </div>
+
         </div>
     </section>
 
     <footer class="footer primary-color">
-        <div class="container grid grid-2">
-            <div>
-                <h1>Alba's Blog</h1>
-                <p>Copyright &copy; 2022</p>
-            </div>
+        <div class="container grid">
             <div class="social flex">
                 <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
                 <a href="#"><i class="fa fa-facebook fa-2x"></i> </a>
                 <a href="#"><i class="fa fa-instagram fa-2x"></i> </a>
             </div>
+            <p>Alba's Blog | Copyright &copy; 2022</p>
         </div>
     </footer>
 </body>

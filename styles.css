@@ -20,7 +20,7 @@ ul {
 }
 
 a {
-  color: #000;
+  color: #f75d04;
   text-decoration: none;
 }
 
@@ -41,12 +41,24 @@ img {
 
 .bio {
   font-family: "Redressed", cursive;
+}
+
+.bio .grid {
+  grid-template-columns: 0.1fr 1fr;
+}
+
+.bio-info {
   opacity: 0.7;
-  border-bottom: 1px solid #ddd;
 }
 
 .bio span {
   font-weight: bold;
+}
+
+.bio .avatar {
+  width: 100px;
+  height: 100px;
+  margin-left: 0;
 }
 
 .hidden {
@@ -56,7 +68,7 @@ img {
 
 .navbar {
   background-color: #fff;
-  height: 90px;
+  height: 70px;
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2);
 }
 
@@ -99,22 +111,16 @@ img {
 .content .grid {
   grid-template-columns: 55% 45%;
   overflow: visible;
-  gap: 30px;
+  gap: 10px;
 }
 
 .content-text {
-  position: relative;
-  top: 20px;
   height: 100%;
   width: 100%;
 }
 
 .content-post {
-  position: relative;
-  top: 0;
-  width: 450px;
-  height: 100%;
-  padding: 40px;
+  padding: 20px;
   z-index: 100;
   justify-self: flex-end;
 }
@@ -161,22 +167,30 @@ img {
   height: auto;
 }
 
-.blog-main .grid {
-  overflow-x: hidden;
-}
-
 .blog-main .card {
-  width: 480px;
+  width: 100%;
   height: 100%;
-  border: #d9d9d9 solid 1px;
   border-radius: 0.5rem;
 }
 
-.blog-main .card > img {
+.blog-main .card img {
   width: 100%;
-  height: 350px;
+  height: 300px;
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
+}
+
+.blog-main .card a {
+  color: #333;
+}
+
+.post-main .grid {
+  overflow-x: hidden;
+}
+
+.post-main img {
+  width: 100%;
+  height: 100%;
 }
 
 .card-footer {
@@ -197,7 +211,7 @@ img {
 }
 
 .footer {
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   color: #fff;
 }
 
@@ -209,14 +223,9 @@ img {
 @media (max-width: 768px) {
   .grid,
   .content .grid,
-  .footer .social,
   .blog-main .grid {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
-  }
-
-  .social .flex {
-    flex-wrap: wrap;
   }
 
   .content {
@@ -240,10 +249,18 @@ img {
 
   .navbar .flex {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   .navbar ul {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .footer .flex {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
 }
