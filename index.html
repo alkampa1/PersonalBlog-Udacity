@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="container flex">
+            <h1 class="logo">
+                <span><i class="material-icons">face</i></span> Alba's Blog
+            </h1>
+            <nav>
+                <ul>
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="content">
+        <div class="container grid">
+            <div class="content-text">
+                <h1>Welcome to my Blog!</h1>
+                <h2>
+                    I like to share information about the beautiful country of Colombia
+                </h2>
+                <div class="my-2">
+                    <h3 class="md">Park Guatape, Colombia</h3>
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/15/8e/0a/63/colombia-and-experience.jpg?w=600&h=400&s=1"
+                        alt="Park Guatape, Colombia" />
+                </div>
+            </div>
+            <div class="content-post">
+                <h3 class="md">Most Recent Post</h3>
+                <div class="card">
+                    <img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/cattleya-trianae-coerulea-orchid-jerry-griffin.jpg"
+                        alt="Cattleya orchid" />
+                    <div class="card-content">
+                        <h3>Cattleya Trianae Orchid</h3>
+                        <p>
+                            <strong>The cattleya trianae orchid</strong>, commonly known as
+                            “May flower” or “May lily” has been the national flower of
+                            Colombia since 1936. It is named in honor of Colombian
+                            naturalist Jose Jeronimo Triana, and is typical of a temperate
+                            thermal floor (between 1,000 and 2,000 meters above sea level
+                            and 17 to 24°C).
+                        </p>
+                        <div>
+                            <a href="blog.html" class="btn btn-outline">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="registration my-2">
+        <div class="container grid grid-1">
+            <div class="reg-form form card">
+                <h3 class="form-hd">Subscribe to the Newsletter</h3>
+                <form name="registration" method="POST" netlify-honeypot="bot-field" data-netlify="true"
+                    data-netlify="true">
+                    <input type="hidden" name="form-name" value="registration">
+                    <p class="hidden">
+                        <label>
+                            Don’t fill this out if you’re human: <input name="bot-field" />
+                        </label>
+                    </p>
+                    <div class="form-control">
+                        <input type="text" placeholder="Name" required />
+                    </div>
+                    <div class="form-control">
+                        <input type="email" placeholder="Email" required />
+                    </div>
+                    <input type="submit" value="Subscribe" class="btn" />
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer primary-color">
+        <div class="container grid grid-2">
+            <div>
+                <h1>Alba's Blog</h1>
+                <p>Copyright &copy; 2022</p>
+            </div>
+            <div class="social flex">
+                <a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+                <a href="#"><i class="fa fa-facebook fa-2x"></i> </a>
+                <a href="#"><i class="fa fa-instagram fa-2x"></i> </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
