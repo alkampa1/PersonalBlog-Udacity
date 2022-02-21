@@ -39,6 +39,12 @@ img {
   height: 300px;
 }
 
+figcaption {
+  font-family: monospace;
+  font-size: 10px;
+  padding: 0 5px;
+}
+
 .bio {
   font-family: "Redressed", cursive;
 }
@@ -222,6 +228,7 @@ img {
 
 @media (max-width: 768px) {
   .grid,
+  .grid-3,
   .content .grid,
   .blog-main .grid {
     grid-template-columns: 1fr;
